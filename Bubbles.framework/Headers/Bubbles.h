@@ -13,7 +13,6 @@
 
 @required
 
-- (void) display : (NSString *) text;
 - (void) bubblesDidReceiveNotification : (NSDictionary *) infos;
 
 @end
@@ -23,12 +22,16 @@
 @interface Bubbles : NSObject
 
 
+
+
+
 + (void)setDelegate:(id<BubblesDelegate>)delegate;
 
 
 
 
-+ (void) initWithAPIKey : (NSString *) APIKey andLocalNotificationUserInfo : (NSDictionary *) userInfo;
++ (void) initWithAPIKey : (NSString *) APIKey andLocalNotification :(UILocalNotification *) localNotication andIsProd :(BOOL) isProd;
+
 /*!
  *  This mandatory method is the entry point to the Bubbles Beacon. It must be
  *  called in the scope of applicationDidFinishLaunching, in the launchOptions param.
@@ -36,7 +39,7 @@
  * @code
  - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
  
- [Bubbles initWithAPIKey:@"APIKey" andBubblesUUID:@"..."];
+ [Bubbles initWithAPIKey:@"YOUR_API_KEY_HERE" andLocalNotification:[launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey]];
  
  //...
  return YES;
@@ -47,7 +50,8 @@
  */
 
 
-+ (void) requestLocalizationAndNotificationsAuthorization;
+
+
 
 
 + (void) didReceiveLocalNotification : (NSDictionary *) userInfo;
@@ -69,6 +73,9 @@
  * @param "notification" forwards the received local notification from the AppDelegate's function didReceiveLocalNotification:(UILocalNotification *)notification
  */
 
+
+
++ (void) requestLocalizationAndNotificationsAuthorization;
 
 
 

@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [Bubbles initWithAPIKey:@"48d3edf9d69061cb41c123be9097ddbc" andLocalNotificationUserInfo:[launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey]];
+    [Bubbles initWithAPIKey:@"48d3edf9d69061cb41c123be9097ddbc" andLocalNotification:[launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey] andIsProd:NO];
     
     [Bubbles setModeCustomView:YES];
     [Bubbles setDebugLogEnabled:YES];
