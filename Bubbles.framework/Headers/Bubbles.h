@@ -150,4 +150,24 @@
  */
 
 
++ (void)didEnterBackground;
++ (void)didBecomeActive;
+
+/*!
+ *  @brief Generates debug logs to console.
+ *
+ *  This is an optional method that displays debug information related to the Bubbles SDK.
+ *  It displays information in the console. The default setting is FALSE.
+ *
+ *
+ *  @param BOOL enable
+ *
+ */
+
+
+
+
+
+
+
 @end
