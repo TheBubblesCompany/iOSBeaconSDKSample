@@ -16,8 +16,8 @@
 		8FA72E731C2872940090674B /* BubblesFrameworkDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA72E721C2872940090674B /* BubblesFrameworkDemoUITests.m */; };
 		8FA72E7F1C2872E50090674B /* BBImageNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA72E7E1C2872E50090674B /* BBImageNotificationViewController.m */; };
 		8FA72E821C28731F0090674B /* BBWebViewNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA72E811C28731F0090674B /* BBWebViewNotificationViewController.m */; };
-		C37425EA1DB688D6006D4B8B /* Bubbles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37425E91DB688D6006D4B8B /* Bubbles.framework */; };
-		C37425EB1DB688D6006D4B8B /* Bubbles.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C37425E91DB688D6006D4B8B /* Bubbles.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C3ECACEC1DE89B4C00AF94A5 /* Bubbles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3ECACEB1DE89B4C00AF94A5 /* Bubbles.framework */; };
+		C3ECACED1DE89B4C00AF94A5 /* Bubbles.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3ECACEB1DE89B4C00AF94A5 /* Bubbles.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C37425EB1DB688D6006D4B8B /* Bubbles.framework in Embed Frameworks */,
+				C3ECACED1DE89B4C00AF94A5 /* Bubbles.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +62,7 @@
 		8FA72E7E1C2872E50090674B /* BBImageNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBImageNotificationViewController.m; sourceTree = "<group>"; };
 		8FA72E801C28731F0090674B /* BBWebViewNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBWebViewNotificationViewController.h; sourceTree = "<group>"; };
 		8FA72E811C28731F0090674B /* BBWebViewNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBWebViewNotificationViewController.m; sourceTree = "<group>"; };
-		C37425E91DB688D6006D4B8B /* Bubbles.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bubbles.framework; sourceTree = "<group>"; };
+		C3ECACEB1DE89B4C00AF94A5 /* Bubbles.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bubbles.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C37425EA1DB688D6006D4B8B /* Bubbles.framework in Frameworks */,
+				C3ECACEC1DE89B4C00AF94A5 /* Bubbles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +87,7 @@
 		8FA72E4C1C2872940090674B = {
 			isa = PBXGroup;
 			children = (
-				C37425E91DB688D6006D4B8B /* Bubbles.framework */,
+				C3ECACEB1DE89B4C00AF94A5 /* Bubbles.framework */,
 				8FA72E571C2872940090674B /* BubblesFrameworkDemo */,
 				8FA72E711C2872940090674B /* BubblesFrameworkDemoUITests */,
 				8FA72E561C2872940090674B /* Products */,
